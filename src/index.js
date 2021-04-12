@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Sign from './steps';
+import Sign from './Sign';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

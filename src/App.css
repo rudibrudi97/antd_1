@@ -1,7 +1,57 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+
+.Sign {
+  padding: 30px;
 }
 
+  .button1 {
+    left: auto;
+  }
+
+  .button2 {
+    right: auto
+  }
+
+   .navbar {
+     text-align: left;
+     border: 2px solid black;
+     height: 100px;
+     background-color: #fff;
+     color: #2e3032;
+     font: bold 1.4em Arial, sans-serif;
+}
+
+ .button_multi {
+   background-color: white;
+   font-size: 50px;
+ }
+   .button1 {
+      background-color: red;
+      color: white;
+      font-size: 0.4em;
+      height:70px;
+      width: 200px;
+      margin-left: 100px;
+   }
+
+   .button2 {
+     background-color: green;
+     color: white;
+     font-size: 0.4em;
+     height:70px;
+     width: 200px;
+     margin-left: 700px;
+   }
+
+   .logo {
+     margin-left: 440px;
+   }
+
+   .dd {
+     margin-left: 10px;
+   }
+
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +86,4 @@
     transform: rotate(360deg);
   }
 }
+*/
