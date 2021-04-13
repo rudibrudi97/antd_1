@@ -1,8 +1,9 @@
 @import '~antd/dist/antd.css';
 
-.Sign {
-  padding: 30px;
-}
+    .Sign {
+        padding: 10px;
+        background-color: white;
+    }
 
   .button1 {
     left: auto;
@@ -23,24 +24,24 @@
 
  .button_multi {
    background-color: white;
-   font-size: 50px;
+   font-size: 45px;
  }
    .button1 {
       background-color: red;
       color: white;
-      font-size: 0.4em;
-      height:70px;
-      width: 200px;
+      font-size: 0.35em;
+      height:45px;
+      width: 170px;
       margin-left: 100px;
    }
 
    .button2 {
      background-color: green;
      color: white;
-     font-size: 0.4em;
-     height:70px;
-     width: 200px;
-     margin-left: 700px;
+     font-size: 0.35em;
+     height:45px;
+     width: 170px;
+     margin-left: 770px;
    }
 
    .logo {
@@ -50,6 +51,61 @@
    .dd {
      margin-left: 10px;
    }
+
+   .rectangle {
+       float: left;
+       margin-right: 30px;
+       width: 530px;
+       margin-left: 100px;
+       height: 180px;
+       background: #ffffff;
+       border: 2px solid black;
+       margin-bottom: 10px;
+   }
+
+    .rectangle2 {
+        float: left;
+        margin-right: 20px;
+        width: 530px;
+        margin-left: 20px;
+        height: 180px;
+        background-color: #ffffff;
+        border: 2px solid black;
+        text-align: left;
+        font-size: 90%;
+        padding-left: 10px;
+        margin-bottom: 20px;
+}
+
+    .rectangle3 {
+     float: left;
+     width: 530px;
+     margin-left: 100px;
+     height: 80px;
+     background-color: #ffffff;
+     border: 2px solid black;
+     margin-bottom: 10px;
+    }
+
+    .drop {
+        float: left;
+        margin-left: 90px;
+        font: bold 0.9em Arial, sans-serif;
+        margin-right: 20px;
+    }
+
+    .drop Dropdown {
+        margin-left: 10px;
+    }
+
+    .head {
+        background-color: white;
+    }
+
+    .Step_css {
+        margin-top: 15px;
+        background-color: white;
+    }
 
 /*
 .App-logo {
