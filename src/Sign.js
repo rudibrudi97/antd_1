@@ -2,7 +2,6 @@ import './App.css';
 import React from "react";
 import {Layout} from "antd";
 import Header from "./Areas/Header";
-import Footer from "./Areas/Footer";
 import Content from "./Areas/Content";
 
 function Sign() {
@@ -12,7 +11,6 @@ function Sign() {
                 <Layout>
                     <Header/>
                     <Content/>
-                    <Footer/>
                 </Layout>
 
             </div>

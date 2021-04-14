@@ -8,6 +8,7 @@ function Footer() {
                 <Button className="button1">Back</Button>
                 <Button className="button2">Save & Next</Button>
             </footer>
+
         </div>
     );
 }
