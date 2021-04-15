@@ -1,81 +1,40 @@
-import React from "react"
+import React, {useState} from "react"
+import {Table, Divider, Checkbox} from "antd";
+import tableData from "./tableData";
 
-const sortTypes_1 = {
-    up:{
-        class: "sort-up",
-        fn:(a,b) => a.name - b.name
+const columns = [
+    {
+        title: "Name Algorithm",
+        dataIndex: "name",
+        sorter: {
+            compare: (a,b) => a.name - b.name,
+            multiple: 1,
+        },
     },
-    down: {
-        class: "sort-down",
-        fn:(a,b) => b.name - a.name
-    },
-    default: {
-        class: "sort",
-        fn: (a) => a
+    {
+        title: "License Modul",
+        dataIndex: "license",
+        sorter: {
+            compare: (a,b) => a.license - b.license,
+            multiple: 1,
+        }
     }
-}
-
-const sortTypes_2 = {
-    up:{
-        class: "sort-up",
-        fn:(a,b) => a.license - b.license
-    },
-    down: {
-        class: "sort-down",
-        fn:(a,b) => b.license - a.license
-    },
-    default: {
-        class: "sort",
-        fn: (a) => a
+];
+const rowSelection = {
+    onChange: (selectedRowKeys, selectedRows) => {
+        console.log("selectedRowKeys: ${selectedRowKeys}", "selectedRows: ", selectedRows)
     }
-}
+};
 
-class TableSorting extends React.Component {
-    state = {
-        currentSort: "default"
-    }
-
-    onSortChange = () => {
-        const {currentSort} = this.state;
-        let nextSort;
-
-        if(currentSort === "down") nextSort = "up";
-        else if(currentSort === "up") nextSort = "default"
-        else if (currentSort === "default") nextSort = "down"
-
-        this.setState({
-            currentSort: nextSort
-        })
-    }
-
-    render() {
-        const {data} = this.props;
-        const {currentSort} = this.state;
-
+const TableSorting = () => {
+    const [selectionType, setSelectionType] = useState("checkbox")
         return(
-                <table className="text-left">
-                    <thead>
-                    <tr>
-                        <th>Name Algorithm</th>
-                        <th>License Module <button onClick={this.onSortChange}>
-                            <i className="fas fa-${sortTypes[currentSort].class"/>
-                        </button></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {
-                        [...data].sort(sortTypes_1[currentSort].fn) &&
-                        [...data].sort(sortTypes_2[currentSort].fn).map( p => (
-                        <tr>
-                            <td>{p.name}</td>
-                            <td>{p.license}</td>
-                        </tr>
-                    ))}
-                    </tbody>
-                </table>
-
-        );
-    }
+            <div>
+                <Table
+                    rowSelection={{type: selectionType, ...rowSelection}}
+                    columns={columns} dataSource={tableData} scroll={{y:150}}/>
+            </div>
+        )
 }
 
 export default TableSorting

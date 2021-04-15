@@ -7,6 +7,7 @@ const {Step} = Steps;
 const steps = [
     {
         title: "Select Data",
+        description: "Select single or study mode",
         content: "First-Content"
     },
     {

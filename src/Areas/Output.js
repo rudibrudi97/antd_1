@@ -3,6 +3,9 @@ import React from "react";
 import {Dropdown, Button, Menu, message} from "antd"
 import {DownOutlined} from "@ant-design/icons"
 
+import TableSorting from "./TableSorting";
+import Editing from "./Editing";
+
 function handleMenuClick(e) {
     message.info("Click on menu item.");
     console.log("click", e);
@@ -22,14 +25,13 @@ function Output() {
     return(
         <>
         <div className="rectangle">
-
+            <TableSorting/>
         </div>
         <div className="rectangle2">
             <h1>Algorithm Parameters</h1>
             <p>kjfdnskcklskmycklsdlcmskmck</p>
         </div>
         <div className="rectangle3">
-
         </div>
         <div className="drop">
             Output Interval:

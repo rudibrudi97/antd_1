@@ -1,0 +1,33 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popup_2 {
+    position: relative;
+    padding-bottom: 40px;
+    width: 100px;
+    max-width: 600px;
+    background-color: #fff;
+}
+
+.popup_2, .button_accept, .button_back  {
+    position: absolute;
+    top:16px;
+    right: 16px;
+}
+
+.button_edit {
+    background-color: #2e3032;
+    float: right;
+    width: 40px;
+}
