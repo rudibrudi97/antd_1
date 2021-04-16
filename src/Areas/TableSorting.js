@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {Table, Divider, Checkbox} from "antd";
+import {Table} from "antd";
 import tableData from "./tableData";
 
 const columns = [

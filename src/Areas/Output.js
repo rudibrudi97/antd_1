@@ -5,6 +5,7 @@ import {DownOutlined} from "@ant-design/icons"
 
 import TableSorting from "./TableSorting";
 import Editing from "./Editing";
+import Selecting from "./Selecting";
 
 function handleMenuClick(e) {
     message.info("Click on menu item.");
@@ -35,11 +36,7 @@ function Output() {
         </div>
         <div className="drop">
             Output Interval:
-            <Dropdown overlay={menu}>
-                <Button>
-                    -----<DownOutlined/>
-                </Button>
-            </Dropdown>
+            <Selecting/>
         </div>
         </>
     )
